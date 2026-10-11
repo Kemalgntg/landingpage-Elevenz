@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevenz - Kuliner Kekinian, Dessert & Minuman Segar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar-header">
+        <div class="top-banner">
+            <span class="status-badge"><i class="fa-solid fa-circle"></i> Buka Hari Ini | 10.00 - 22.00 WIB</span>
+            <span class="promo-text">🎉 Diskon 10% untuk Pembelian Pertama via WA!</span>
+        </div>
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <span class="logo-accent">11</span>z Elevenz
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#mood-finder">Mood Finder</a></li>
+                <li><a href="#menu">Daftar Menu</a></li>
+                <li><a href="#promo">Promo Combo</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+            </ul>
+            <a href="#menu" class="btn btn-primary nav-btn"><i class="fa-solid fa-utensils"></i> Pesan Sekarang</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge-tag"><i class="fa-solid fa-fire"></i> Kuliner Hits #1 UMKM</span>
+                <h1>Manjakan Lidahmu di <span class="highlight">Elevenz</span></h1>
+                <p>Dari Bakmi Chili Oil pedas gurih, Milky Bun Thailand lumer, hingga Es Kuwut segar. Semua dibuat segar setiap hari dengan bahan berkualitas tinggi!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-burger"></i> Lihat Menu & Pesan</a>
+                    <a href="#mood-finder" class="btn btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> Mood Finder</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>4.9 <i class="fa-solid fa-star star"></i></strong>
+                        <span>1,000+ Ulasan</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong>13+</strong>
+                        <span>Varian Menu</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span>Halal & Fresh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="main-image-card">
+                    <img src="hero_culinary_spread_1791642799167.jpg" alt="Bakmi Chili Oil Elevenz" class="hero-img">
+                    <div class="floating-badge badge-top">
+                        <i class="fa-solid fa-pepper-hot"></i> Bestseller
+                    </div>
+                    <div class="floating-badge badge-bottom">
+                        <i class="fa-solid fa-heart"></i> 100% Homemade
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mood-finder" class="mood-finder">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Fitur Spesial</span>
+                <h2>Bingung Mau Makan Apa? Pilih Mood Kamu!</h2>
+                <p>Klik salah satu mood di bawah dan temukan pilihan menu terbaik untuk kamu saat ini.</p>
+            </div>
+            <div class="mood-buttons">
+                <button class="mood-btn active" data-mood="all">✨ Semua Mood</button>
+                <button class="mood-btn" data-mood="pedas">🌶️ Pedas & Gurih</button>
+                <button class="mood-btn" data-mood="manis">🍰 Manis & Lumer</button>
+                <button class="mood-btn" data-mood="segar">🍹 Segar & Dingin</button>
+                <button class="mood-btn" data-mood="kenyang">🍚 Kenyang Maksimal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">Semua Menu</button>
+                <button class="tab-btn" data-category="makanan">🍜 Makanan Utama</button>
+                <button class="tab-btn" data-category="dessert">🍰 Dessert & Camilan</button>
+                <button class="tab-btn" data-category="minuman">🧋 Minuman</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+            </div>
+        </div>
+    </section>
+
+    <section id="promo" class="promo-section">
+        <div class="container">
+            <div class="promo-card">
+                <div class="promo-info">
+                    <span class="promo-badge">PAKET COMBO HEMAT</span>
+                    <h2>Bakmi Chili Oil + Milk Tea Segar</h2>
+                    <p>Paduan pedas gurihnya chili oil dan manis lembutnya Milk Tea. Hanya <strong>Rp 25.000</strong></p>
+                    <button class="btn btn-primary" onclick="addComboToCart()">
+                        <i class="fa-solid fa-cart-plus"></i> Tambah Combo ke Pesanan
+                    </button>
+                </div>
+                <div class="promo-img">
+                    <img src="paket_combo_hemat.png" alt="Combo Promo Elevenz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Kata Mereka</span>
+                <h2>Ulasan Pelanggan Setia Elevenz</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bakmi Chili Oil-nya beneran nagih! Pedesnya pas, kenyalnya pas, terus minumnya Es Kuwut. Kombinasi sempurna banget!"</p>
+                    <div class="user">
+                        <strong>- Aqlan Fawaz</strong>
+                        <span>Food Lover</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Milky Bun Thailand nya lumer banget di mulut! Mana harganya terjangkau lagi. Pasti bakal re-order Tiramisu Tres Leches-nya juga."</p>
+                    <div class="user">
+                        <strong>- Mike</strong>
+                        <span>Pelanggan Setia</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Pesan via WA gampang banget pakai fitur landing page ini. Matcha Latte & Omurice-nya favorit saya!"</p>
+                    <div class="user">
+                        <strong>- Naufal</strong>
+                        <span>Mahasiswa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="lokasi" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <span class="logo-accent">11</span>z Elevenz
+                </a>
+                <p>Kedai Kuliner Kekinian menyajikan makanan berat, dessert lumer, dan minuman segar siap menemani harimu.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h4><i class="fa-solid fa-location-dot"></i> Lokasi & Jam Operasional</h4>
+                <p>Jl. Budi No. 11, Kota Bandung</p>
+                <p><strong>Buka Setiap Hari:</strong> 10:00 - 22:00 WIB</p>
+            </div>
+            <div class="footer-contact">
+                <h4><i class="fa-solid fa-headset"></i> Kontak Kami</h4>
+                <p>WhatsApp: +62 812-3456-7890</p>
+                <p>Instagram: @elevenz.culinary</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Elevenz Culinary. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="floating-cart-bar" id="cart-bar">
+        <div class="cart-summary" onclick="toggleCartModal()">
+            <div class="cart-icon">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <div class="cart-text">
+                <span class="cart-label">Total Pesanan:</span>
+                <span class="cart-price" id="cart-total">Rp 0</span>
+            </div>
+        </div>
+        <button class="btn btn-whatsapp" id="btn-wa-order" onclick="sendToWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i> Pesan via WA
+        </button>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3><i class="fa-solid fa-receipt"></i> Rincian Pesanan Kamu</h3>
+                <button class="close-btn" onclick="toggleCartModal()">&times;</button>
+            </div>
+            <div class="cart-items-list" id="cart-items-list">
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-modal-total">
+                    <span>Total Pembayaran:</span>
+                    <strong id="modal-cart-total">Rp 0</strong>
+                </div>
+                <button class="btn btn-whatsapp btn-block" onclick="sendToWhatsApp()">
+                    <i class="fa-brands fa-whatsapp"></i> Kirim Pesanan ke WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
